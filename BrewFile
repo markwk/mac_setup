@@ -1,0 +1,114 @@
+tap 'caskroom/cask'
+tap 'caskroom/versions'
+
+# Install java first since other programs require it during installation
+cask 'java8'
+
+# Must haves
+brew 'git'
+brew 'maven@3.5'
+brew 'node'
+brew 'ruby'
+
+# Unzip utility, necessary for mvn process
+brew 'p7zip'
+
+### Browsers ###
+cask 'google-chrome'
+cask 'firefox'
+
+### Text Editors/IDEs
+cask 'atom'
+cask 'visual-studio-code'
+cask 'sublime-text'
+# cask install eclipse-jee
+
+### Communication Tools ###
+cask 'skype'
+# cask 'slack'
+# cask 'microsoft-teams'
+
+### Core Dev Tools
+#cask 'docker'
+cask 'iterm2'
+cask 'cyberduck'
+# cask 'filezilla'
+cask 'postman'
+#cask 'jetbrains-toolbox'
+# cask 'ios-console'
+#cask 'remote-desktop-manager'
+# brew 'imagemagick'
+# brew 'zsh'
+# brew 'zsh-completions'
+# brew 'zsh-syntax-highlighting'
+# cask 'reactotron'
+
+# Calendar within the top menu
+# cask 'itsycal'
+
+# Cloud Storage and Backup Tools
+cask 'backblaze'
+cask 'dropbox'
+# s3 tools
+#cask 'onedrive'
+#cask 'keep'
+
+# Useful Productivity Apps
+cask 'adobe-acrobat-reader'
+cask 'skim' 
+cask 'keeweb'
+cask 'alfred'
+cask 'caffeine'
+cask 'spectacle'
+cask 'airtable'
+cask 'bartender'
+
+# Tracking Tools
+brew 'tag'
+cask 'rescuetime'
+
+### Writer and Research Tools
+cask 'typora'
+cask 'macdown'
+cask 'calibre'
+cask 'bookends'
+cask 'airtable'
+cask 'anki'
+
+### Design Tools
+cask 'skitch'
+# cask 'affinity-photo-beta'
+# cask 'affinity-designer-beta'
+
+# Music
+cask 'spotify'
+
+# OPTIONAL: Install Apps via Apple's App Store 
+# NOTE: Be sure that App Store is open
+brew 'mas'
+mas 'Outline', id: 1356178125
+mas 'Todoist', id: 585829637
+mas 'Amphetamine', id: 937984704
+mas 'ResizeIt', id: 416280139
+
+# Mac Office and Design Tools 
+mas 'Pages', id: 409201541
+mas 'Keynote', id: 409183694
+mas 'Numbers', id: 409203825
+# mas 'iMovie', id: 408981434
+
+# iOS Coding
+mas 'Xcode', id: 497799835
+# mas 'MONIT', id: 1014850245
+# mas 'Color Picker', id: 641027709
+# mas 'Project Statistics for Xcode', id: 650764572
+
+# Things Missing: 
+# 'Toggl Desktop'
+# The Archive
+# Word Counter
+
+# Optional: Install more recent versions of some macOS tools
+#brew install vim --with-override-system-vi
+#brew install grep
+#brew install openssh
