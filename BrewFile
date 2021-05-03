@@ -13,6 +13,9 @@ brew 'ruby'
 # Unzip utility, necessary for mvn process
 brew 'p7zip'
 
+# command line tool to select default applications for opening files
+brew 'duti'
+
 ### Browsers ###
 cask 'google-chrome'
 cask 'firefox'
@@ -50,6 +53,7 @@ cask 'postman'
 cask 'backblaze'
 cask 'dropbox'
 # s3 tools
+brew 's3cmd'
 #cask 'onedrive'
 #cask 'keep'
 
@@ -62,6 +66,7 @@ cask 'caffeine'
 cask 'spectacle'
 cask 'airtable'
 cask 'bartender'
+cask 'unshaky'
 
 # Tracking Tools
 brew 'tag'
@@ -74,9 +79,13 @@ cask 'calibre'
 cask 'bookends'
 cask 'airtable'
 cask 'anki'
+brew 'djview4'
 
-### Design Tools
+### Design and Photo Tools
+cask 'flickr-uploadr'
 cask 'skitch'
+cask 'gimp'
+# cask 'inkscape'
 # cask 'affinity-photo-beta'
 # cask 'affinity-designer-beta'
 
@@ -95,7 +104,10 @@ mas 'ResizeIt', id: 416280139
 mas 'Pages', id: 409201541
 mas 'Keynote', id: 409183694
 mas 'Numbers', id: 409203825
-# mas 'iMovie', id: 408981434
+mas 'iMovie', id: 408981434
+
+# Node.js
+brew 'yarn'
 
 # iOS Coding
 mas 'Xcode', id: 497799835
